@@ -20,20 +20,86 @@ PC      960px a víc
 
 .obrazek{
 	border-radius: 60%;
+	border: 2px solid rgb(208, 213, 217);
+	max-width: 100%;
 }
+
+
+/* ----MOBILE SCREEN--------------- */
+
+		.mainbox{
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: center;
+			}
+
+		 .flexbox{ 
+			display: flex;
+			border: 2px solid rgb(200, 209, 209);
+			box-shadow: 5px 5px 5px rgb(120, 122, 123);
+			background-color: rgb(253, 250, 250);
+			padding: 20px;
+			flex-flow: column;
+			justify-content: center;
+			align-items: center;
+			flex-basis: 25%;
+			text-align: center;
+			margin: 20px;
+			height: 350px;
+			width: 350px;
+		}
+	
+/* ----TABLET SCREEN--------------- */
+@media screen and (min-width: 540px)
+{
+		.mainbox{
+			flex-direction: row;
+			flex-wrap: wrap;
+					}
+
+		.flexbox{
+			flex-direction: row;
+			justify-content: center;
+			text-align: left;
+			align-items: end;
+			flex-shrink: 0;
+			flex-basis: 400px;
+			flex-grow: 0;
+			height: fit-content;
+		}
+		
+		.obrazek{
+			float: left;
+			margin: 18px;
+			}
+
+		.odstavecnadpis{
+			display: flex;
+			flex-direction: column;
+		
+		}
+		
+
+}
+
+/* -----PC SCREEN--------------- */
+@media screen and (min-width: 960px)
+{
+
 .mainbox{
 	display: flex;
+	flex-direction: row;
 	justify-content: space-around;
-	gap:  10px;
+	flex-wrap: nowrap;
 }
+
 .flexbox{
-	display: flex;
-	text-align: center;
-	border: 2px solid rgb(200, 209, 209);
-	box-shadow: 5px 5px 5px rgb(120, 122, 123);
-	background-color: rgb(253, 250, 250);
-	padding: 20px;
-	flex-flow: column;
-	justify-content: space-between;
 	align-items: center;
+	text-align: center;
+	flex-direction: column;
+	flex-shrink: 1;
+	height: 350px;
+	width: 350px;
+	}
 }
