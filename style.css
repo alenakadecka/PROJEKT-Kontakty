@@ -5,6 +5,7 @@ html { box-sizing: border-box; }
 body {
 	font-family: sans-serif;
 	font-size: 14px;
+	background-color: rgb(250, 247, 242);
 }
 
 /* ---------------------------------------------------- */
@@ -15,3 +16,24 @@ Mobil   0 - 539px
 Tablet  540px - 959px (čti jako 540px a víc)
 PC      960px a víc
 */
+
+
+.obrazek{
+	border-radius: 60%;
+}
+.mainbox{
+	display: flex;
+	justify-content: space-around;
+	gap:  10px;
+}
+.flexbox{
+	display: flex;
+	text-align: center;
+	border: 2px solid rgb(200, 209, 209);
+	box-shadow: 5px 5px 5px rgb(120, 122, 123);
+	background-color: rgb(253, 250, 250);
+	padding: 20px;
+	flex-flow: column;
+	justify-content: space-between;
+	align-items: center;
+}
